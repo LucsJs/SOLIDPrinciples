@@ -15,3 +15,7 @@ O arquivo 'L.cpp' exemplifica o princípio L - Liskov Substitution Principle.
 Classes derivadas devem poder substituir suas classes base sem alterar o comportamento esperado.
 Garante que herança seja usada corretamente, evitando comportamentos inesperados.
 No exemplo, a classe Andorinha pode ser usada no lugar da classe Ave e usa-lá não quebraria o  funcionamento da função que espera uma Ave.
+
+O arquivo 'D.cpp' exemplifica o princípio D - Dependency Inversion Principle.
+Dependa de abstrações, interfaces, não de implementações concretas. Isso Facilita a troca de dependências (ex: trocar banco de dados ou tipo de conexão) e melhora o acoplamento do sistema.
+A classe Notificador depende da interface IMensagem, assim podemos trocar Email por SMS, Push, etc., sem mudar o código do Notificador.
